@@ -15,7 +15,7 @@ public class loadbalancer{
     server.close();
     }
     
-    else if(clientsentence.contains("kurus")){
+    else if(clientsentence.contains("gemuk")){
     Socket server=new Socket("192.168.231.130,2346);
     DataOutputStream outtoserver=new DataOutputStream(server.getOutputStream());
     outtoserver2.writeBytes(clientsentence+"\n);

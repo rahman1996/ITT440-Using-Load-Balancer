@@ -38,7 +38,7 @@ int main()
     sockfd=socket(AF_INET,SOCK_STREAM,0);
     bzero(&servaddr,sizeof servaddr);
     servaddr.sin_family=AF_INET;
-    servaddr.sin_port=htons(22000);
+    servaddr.sin_port=htons(22500);
     inet_pton(AF_INET,"192.168.19.128",&(servaddr.sin_addr));
     connect(sockfd,(struct sockaddr *)&servaddr,sizeof(servaddr));
     
